@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+button:focus {
+    outline: none;
+}
+
+.App-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+}
+
+.product-card-parent {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 400px;
+    width: 20%;
+    min-width: 200px;
+    margin: 8px;
+    /* padding: 15px; */
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: white;
+}
+
+.product-card-parent:hover {
+    box-shadow: 1px 8px 7px rgba(160, 159, 159, 0.397);
+ }
+
+.product-visual {
+    height: 80%;
+    width: 100%;
+}
+
+.product-button-show {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 8px;
+    border: none;
+    color: rgba(102, 205, 171, 0.8);
+    font-weight: bold;
+    font-size: medium;
+    /* display: block; */
+}
+
+.product-button-hide {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.product-tint-show {
+    position: relative;
+    top: -90%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(102, 205, 171, 0.8);
+}
+
+.product-tint-hide {
+    display: none;
+}
+
+.product-image {
+    height: 80%;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+    /* clear: both; */
+}
+
+.product-data {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 15px 15px 15px;
+}
+
+.product-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: large;
+    /* float: left; */
+}
+
+.product-price {
+    font-size: large;
+    font-weight: bold;
+    color: rgba(102, 205, 171, 0.8);
+    /* float: right; */
+}
+
+.product-description {
+    font-size: small;
+    /* clear: both; */
+    color: grey;
+}
+
+.product-comparison {
+    
+}
+
+.comparison-chart-parent {
+    height: auto;
+    width: 80%;
+    padding: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.chart-column {
+    height: auto;
+    width: 30%;
+    min-width: 250px;
+}
+
+.chart-row-data {
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    justify-content: center;
+    font-size: small;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.chart-row-data-hide {
+    display: none;
+}
+
+.chart-header {
+    font-weight: bold;
+    font-size: medium;
+    border-bottom: 5px solid rgba(143, 140, 140, 0.521);
+}
+
+.chart-row-attributes {
+    font-weight: bold;
+    font-size: small;
+    justify-content: left;
+    background-color: rgba(175, 177, 179, 0.288);
+}
+
+.fresh {
+    background-color: lightgreen;
+}
+
+.frozen {
+    background-color: skyblue;
+}
+
+.edit-rows-button {
+    font-size: x-small;
+    color: blue;
+    border: none;
+    text-align: left;
+}
+
+.close-modal-button {
+    position: relative;
+    float: right;
+    margin: 0;
+    top: -10px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.edit-attributes-parent {
+    background-color: white;
+    width: 25%;
+}
+
+.edit-attributes-row {
+    text-align: left;
+    font-size: small;
+    padding: 16px;
+    border: none;
+}
+
+.edit-attributes-header {
+    font-size: large;
+}
+
+.edit-attributes-search {
+    background-color: lightgrey;
+    color: grey;
+}
+
+.edit-attributes-apply {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.edit-attributes-list-item {
+    padding: 8px;
+    padding-left: 16px;
+}
+
+.checkbox {
+    height: 12px;
+    width: 12px;
+    padding: 0;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.checkbox-selected {
+    background-color: blue;
+}
+
+.checkbox-deselected {
+    background-color: white;
+}
